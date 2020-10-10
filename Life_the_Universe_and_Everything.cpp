@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int arr[MAX], i = 0;
-    for (i = 0; i < MAX; i++)
+    for (i = 0; ; i++)
     {
         cin >> arr[i];
         if (arr[i] == 42)
