@@ -1,6 +1,5 @@
 //Code Written by PINAKI BHATTACHARJEE
 #include <bits/stdc++.h>
-#define MAX 1000
 typedef long long ll;
 using namespace std;
 int main()
