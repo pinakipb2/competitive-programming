@@ -19,7 +19,6 @@ int main()
     cin>>t;
     string a;
     string add = "++";
-    string minus = "--";
     int ans=0;
     while(t--)
     {
