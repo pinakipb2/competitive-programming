@@ -1,3 +1,4 @@
 .cph/
 *.cpp.bin
 .vscode/
+*.exe
