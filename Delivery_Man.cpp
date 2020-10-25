@@ -1,55 +1,46 @@
-//Code Written by PINAKI BHATTACHARJEE
+//𝓒𝓸𝓭𝓮 𝓦𝓻𝓲𝓽𝓽𝓮𝓷 𝓫𝔂 𝓟𝓲𝓷𝓪𝓴𝓲 𝓑𝓱𝓪𝓽𝓽𝓪𝓬𝓱𝓪𝓻𝓳𝓮𝓮
 #include<bits/stdc++.h>
-typedef long long ll;
 using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+typedef unsigned int uint;
+typedef unsigned long long ull;
+
+#define MAX 10000
+#define pb push_back
+#define all(x) (x).begin(),(x).end()
+
+const int MOD = (int) 1e9 + 7;
+
 void pinakipb2()
 {
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    /*#ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
         freopen("input.txt","r",stdin);
         freopen("output.txt","w",stdout);
-    #endif*/
+    #endif
 }
 int main()
 {
     pinakipb2();
-    ll t,a,b,ele;
+    ll t,a,b;
     cin>>t>>a>>b;
-    vector<ll> c,d;
-    for(ll i=0;i<t;i++)
+    ll a1[t],b1[t];
+    for(int i=0;i<t;i++)
     {
-        cin>>ele;
-        c.push_back(ele);
+        cin>>a1[i];
     }
-    for(ll i=0;i<t;i++)
+    for(int i=0;i<t;i++)
     {
-        cin>>ele;
-        d.push_back(ele);
+        cin>>b1[i];
     }
-    sort(c.begin(),c.end(),greater<ll>());
-    sort(d.begin(),d.end(),greater<ll>());
-    for(ll i=0;i<t-a;i++)
+    vector<ll> v;
+    for(int i=0;i<t;i++)
     {
-        c.pop_back();
+        ll ele = max(a1[i],b1[i]);
+        v.pb(ele);
     }
-    for(ll i=0;i<t-b;i++)
-    {
-        d.pop_back();
-    }
-    for (ll i = 0; i < d.size(); i++)
-    {
-        c.push_back(d.at(i));
-    }
-    sort(c.begin(),c.end(),greater<ll>());
-    for(ll i=0;i<c.size()-t;i++)
-    {
-        c.pop_back();
-    }
-    ll ans=0;
-    for (ll i = 0; i < c.size(); i++)
-    {
-        ans += c.at(i);
-    }
-    cout<<ans<<endl;
+    cout<<accumulate(all(v),0)<<endl;
     return 0;
 }
