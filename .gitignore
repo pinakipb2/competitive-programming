@@ -2,3 +2,4 @@
 *.cpp.bin
 .vscode/
 *.exe
+/**/*.cpp.bin
