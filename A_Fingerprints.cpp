@@ -41,7 +41,7 @@ int main()
     {
         for(int j=0;j<b;j++)
         {
-            if(cnt==b)
+            if(cnt==b)  // Makes code faster
             {
                 break;
             }
