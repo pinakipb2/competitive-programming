@@ -49,23 +49,21 @@ int main()
     ll arr[t];
     ll dp[1001];
     memset(dp,0,sizeof(dp));
-
-        for(int i=0;i<t;i++)
+    for(int i=0;i<t;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=0;i<t;i++)
+    {
+        for(int j=2;j<1001;j++)
         {
-            cin>>arr[i];
-        }
-        for(int i=0;i<t;i++)
-        {
-            for(int j=2;j<1001;j++)
+            if(arr[i]%j==0)
             {
-                if(arr[i]%j==0)
-                {
-                    dp[j]++;
-                }
+                dp[j]++;
             }
         }
-        ll ele = distance(dp,max_element(dp,dp+1001));
-        cout<<ele<<endl;
-
+    }
+    ll ele = distance(dp,max_element(dp,dp+1001));
+    cout<<ele<<endl;
     return 0;
 }
