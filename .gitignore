@@ -1,8 +1,0 @@
-.cph/
-*.cpp.bin
-.vscode/
-*.exe
-!CP.exe
-/**/*.cpp.bin
-/**/*.bin
-*.bin

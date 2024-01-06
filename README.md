@@ -1,8 +1,4 @@
-# competitive-programming
-My style of codes.
+# Competitive Programming
 
-### .cph/ files are no longer maintained !!
-### Only cpp files will be added now onwards.... and older .cpp.bin and ./cph files will be deleted !!
-
-# THIS REPO IS NO LONGER MAINTAINED AND MAY BECOME PRIVATE IN NEAR FUTURE !!
-# KEEP CODING :)
+### :rocket: Setup
+Read setup instructions from : [Here](https://github.com/pinakipb2/competitive-programming/wiki)
